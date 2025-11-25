@@ -43,12 +43,13 @@ Sırasıyla adımlar şu şekildedir :
 # 1)Dataset'i Yükleme
 
 ```python
-```import pandas as pd 
+import pandas as pd 
 import matplotlib.pyplot as plt 
 import numpy as np
 mobiles = pd.read_csv("mobiles_dataset.csv", encoding='latin-1') 
-mobiles.head()```
+mobiles.head()
 
+```
 | Company Name | Model Name | Mobile Weight | RAM | Front Camera | Back Camera | Processor | Battery Capacity | Screen Size | Launched Price (Pakistan) | Launched Price (India) | Launched Price (China) | Launched Price (USA) | Launched Price (Dubai) | Launched Year |
 |:-------------|:-----------|:--------------|:----|:-------------|:------------|:----------|:-----------------|:------------|:--------------------------|:-----------------------|:----------------------|:---------------------|:-----------------------|:--------------|
 | Apple | iPhone 16 128GB | 174g | 6GB | 12MP | 48MP | A17 Bionic | 3,600mAh | 6.1 inches | PKR 224,999 | INR 79,999 | CNY 5,799 | USD 799 | AED 2,799 | 2024 |
