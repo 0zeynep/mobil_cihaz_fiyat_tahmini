@@ -83,6 +83,8 @@ RAM ile Launched Price (USA) arasındaki katsayı, diğerlerinden en yüksek ve 
 
 # 6)RAM miktarı ile telefonların ortalama lansman fiyatı arasındaki ilişkiyi gösteren bar grafiği
 
+![Bar Grafiği](./assets/logo.png)
+
 # 7)Linear regresyon modeli oluşturma
 
 Hedef ve özellik tanımlanır.
