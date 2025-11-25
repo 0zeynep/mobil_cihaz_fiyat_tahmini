@@ -41,3 +41,9 @@ Başarının düşük olmasının nedeni sadece RAM ile fiyat tahmini yapmaya ç
 Sırasıyla adımlar şu şekildedir :
 
 # 1)Dataset'i Yükleme
+
+'''import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+mobiles=pd.read_csv("mobiles_dataset.csv",encoding='latin-1')
+mobiles.head()'''
