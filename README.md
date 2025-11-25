@@ -43,7 +43,7 @@ Sırasıyla adımlar şu şekildedir :
 # 1)Dataset'i Yükleme
 
 ```python
-import pandas as pd 
+```import pandas as pd 
 import matplotlib.pyplot as plt 
 import numpy as np
 mobiles = pd.read_csv("mobiles_dataset.csv", encoding='latin-1') 
