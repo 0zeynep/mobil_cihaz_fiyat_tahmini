@@ -45,10 +45,9 @@ Sırasıyla adımlar şu şekildedir :
 ```python
 import pandas as pd 
 import matplotlib.pyplot as plt 
-import numpy as np 
-
+import numpy as np
 mobiles = pd.read_csv("mobiles_dataset.csv", encoding='latin-1') 
-mobiles.head()'''
+mobiles.head()```
 
 | Company Name | Model Name | Mobile Weight | RAM | Front Camera | Back Camera | Processor | Battery Capacity | Screen Size | Launched Price (Pakistan) | Launched Price (India) | Launched Price (China) | Launched Price (USA) | Launched Price (Dubai) | Launched Year |
 |:-------------|:-----------|:--------------|:----|:-------------|:------------|:----------|:-----------------|:------------|:--------------------------|:-----------------------|:----------------------|:---------------------|:-----------------------|:--------------|
