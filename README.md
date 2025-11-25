@@ -95,6 +95,9 @@ Veri seti X_train %80 ve y_train %20 olmak üzere rastgele bölünür.
 
 Model eğitimi ve tahmini yapılır.
 
+![regresyon](regresyon.png)
+
+
 
 # 8)Neden Linear Regresyon seçildi?
 
