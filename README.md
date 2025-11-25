@@ -80,6 +80,20 @@ Front Camera,Launched Year ve RAM özelliklerinin Launched Price(USA) ile özell
 
 RAM ile Launched Price (USA) arasındaki katsayı, diğerlerinden en yüksek ve +1'e en yakın olanıdır. Bu, RAM'in fiyattaki değişimi açıklamada en güçlü değişken olduğunu gösterir.
 
+--- Korelasyon Matrisi ---
+                           RAM  Launched Year  Front Camera  \
+RAM                   1.000000       0.380441      0.459534   
+Launched Year         0.380441       1.000000      0.166024   
+Front Camera          0.459534       0.166024      1.000000   
+Launched Price (USA)  0.466653       0.053451      0.072105   
+
+                      Launched Price (USA)  
+RAM                               0.466653  
+Launched Year                     0.053451  
+Front Camera                      0.072105  
+Launched Price (USA)              1.000000  
+
+
 
 # 6)RAM miktarı ile telefonların ortalama lansman fiyatı arasındaki ilişkiyi gösteren bar grafiği
 
