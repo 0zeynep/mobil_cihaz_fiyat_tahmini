@@ -78,7 +78,7 @@ Front Camera,Launched Year ve RAM özelliklerinin Launched Price(USA) ile özell
 
 # 5)Korelasyon Matrisi
 
-RAM ile Launched Price (USA) arasındaki katsayı, diğerlerinden en yüksek ve +1'e en yakın olanıdır. Bu, RAM'in fiyattaki değişimi açıklamada en güçlü değişken olduğunu gösterir.
+Bağımlı değişken ve bağımsız değişken arasındaki ilişkinin gücücnü gösterebilmek için korelasyon matrisi kullanılmıştır.Yani Ram,Launched Year ve Front Camera'nın Launched Price(USA) ile  arasındaki ilişkiyi göstermek için korelasyon matrisi uygulanmıştır. RAM ile Launched Price (USA) arasındaki katsayı, diğerlerinden en yüksek ve +1'e en yakın olanıdır. Bu, RAM'in fiyattaki değişimi açıklamada en güçlü değişken olduğunu gösterir.
 
 --- Korelasyon Matrisi ---
                            RAM  Launched Year  Front Camera  \
@@ -97,7 +97,11 @@ Launched Price (USA)              1.000000
 
 # 6)RAM miktarı ile telefonların ortalama lansman fiyatı arasındaki ilişkiyi gösteren bar grafiği
 
+Aşağıdaki bar greğinde de görüldüğü gibi RAM miktarı arttıkça Launched Price(USA) de artmaktadır.
+
+
 ![Bar Grafiği](bar_grafik.png)
+
 
 # 7)Linear regresyon modeli oluşturma
 
@@ -115,48 +119,38 @@ Model eğitimi ve tahmini yapılır.
 
 # 8)Neden Linear Regresyon seçildi?
 
-Kolay yorumlanabilirdir.
-
-Basit ve hızlıdır.
-
 Fiyat tahmini için uygundur .
 
-Dataset ile uyumludur.
-
-
-# 8)Neden Linear Regresyon seçildi?
+Veri seti  ile uyumludur.
 
 Kolay yorumlanabilirdir.
 
 Basit ve hızlıdır.
 
-Fiyat tahmini için uygundur .
 
-Dataset ile uyumludur.
-
-# Diğer Regresyon Modelleri Neden Seçilmedi
+# 9)Diğer Regresyon Modelleri Neden Seçilmedi
 
 # Lojistik Regression: 
 
-Datasette 0-1 ,evet-hayır gib ifadeler bulunmadığı için lojitik regresyona uygun değildir.
+Veri setinde kategorik (sınırlı sayıda sonucu olan  0-1 ,evet-hayır gibi) ifadeler bulunmadığı için lojistik regresyona uygun değildir.
 
-# Polinomical Regression:
+# Polinomial Regression:
 
-Veri setinde bariz bir polinomik ilişki gözlenmemiştir.
+Veri setinde bariz bir polinomik ilişki gözlenmemiştir.Yani bağımsız değişken x ile bağımlı değişken y arasında polinomal olarak dgösterilebilecek bir durum yoktur.
 
 Yorumlanabilirliği düşüktür.
 
 # Random Forest:
 
-Çok karmaşık olacağı için seçilmemiştir.
+Çok karmaşık olacağı için seçilmemiştir.Çok fazla tahmin bir araya getirdiği için hangi tahminin ne için yapıldığını anlamak zordur.
 
 Linear modele göre daha yavaştır.
 
-# SVR
+# SVR :
 
 Karmaşıktır.Aykırı değerler için dirençlidir.Bu veri seti için gerekli değildir.
 
-Yorumlaması zor.
+Linear regresyona göre daha az yorumlanabilirdir.
 
 
 
@@ -164,6 +158,13 @@ Yorumlaması zor.
 
 Bu proje kapsamında yapılan analizler ve oluşturulan Lineer Regresyon modeli, mobil cihaz fiyatlarını etkileyen RAM özelliğinin rolünü açıkça göstermiştir.
 
-Güçlü Eğilim: RAM miktarı ile ABD Lansman Fiyatı arasında net bir pozitif ilişki olduğu gözlemlenmiştir. Bar grafiği, RAM arttıkça ortalama fiyatın istikrarlı bir şekilde arttığını kanıtlamaktadır.
+Veri seti için gerekli temizlemler yapıldı
 
-Model Seçimi: Korelasyon matrisi, RAM'in diğer incelenen özellikler (Launched Year, Front Camera) arasında Fiyat ile en belirgin ilişkiye sahip değişken olduğunu göstermiştir.
+Model Seçimi:Makine öğrenmesi algoritmaları sırayla denendir. En uygun yöntem olarak Linear Regresyon seçildi.
+
+Güçlü Eğilim: RAM miktarı ile ABD Lansman Fiyatı arasında net bir pozitif ilişki olduğu gözlemlendi. Bar grafiği ve korelasyon matrisi , RAM arttıkça ortalama fiyatın istikrarlı bir şekilde arttığını kanıtlamaktadır.
+
+
+
+
+
